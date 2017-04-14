@@ -11,7 +11,10 @@
         body {
             height: 100%;
             width: 100%;
-            background-color: #000;
+            background: url(img/binary-code-screen.jpg);
+            background-size: cover;
+            background-color: #fff;
+
         }
 
         /*main, section, article {*/
@@ -20,9 +23,9 @@
 
         header {
             width: 1444px;
-            height: 600px;
+            height: 900px;
             background: url(img/brianna-fairhurst-2888.jpg);
-            /*opacity: 1.1;*/
+            opacity: 0.3;
             position: relative;
             background-repeat: no-repeat;
             background-size: cover;   /* Takes up any extra white space at the width of the page */
@@ -36,8 +39,8 @@
             position: absolute;
         }
 
-        a, #page-title {
-            color: #FFFFCC;
+        a {
+            color: #ddebf1;
             font-size: large;
         }
 
@@ -69,6 +72,7 @@
             margin-left: 20px;
             font-family: 'Quicksand', sans-serif;
             font-size: x-large;
+            color: #fff;
         }
 
         .h_refs {
@@ -81,12 +85,13 @@
             clear: both;
             width: 130px;
             float: left;
+            opacity: 0.1;
             margin-left: 28px;
             margin-top: 0px;
             display: block;
             height: 1px;
             border: 0;
-            border-top: 2px solid #B7B3A2;
+            border-top: 2px solid #000;
 
         }
         #r_hr {
@@ -99,7 +104,7 @@
             display: block;
             height: 1px;
             border: 0;
-            border-top: 2px solid #B7B3A2;
+            border-top: 2px solid #000;
         }
         a:hover {
             color: purple;
@@ -128,10 +133,10 @@
                 <hr>
             </div>
             <ul id="nav-list">
-                <li><a href="#" class="h_refs">Home</a></li>
                 <li><a href="#" class="h_refs">About Me</a></li>
                 <li><a href="resume.html" class="h_refs">Resume</a></li>
                 <li><a href="portfolio.html" class="h_refs">Portfolio</a></li>
+                <li><a href="personal.html" class="h_refs">Home</a></li>
             </ul>
             <hr id="r_hr">
         </nav>

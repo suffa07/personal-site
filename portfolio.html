@@ -2,9 +2,199 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Personal Site</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Nunito+Sans|Pavanam|Quicksand|Trirong" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #FFF;
+        }
+
+        /*main, section, article {*/
+        /*border: 1px solid red;*/
+        /*}*/
+
+        header {
+            width: 1444px;
+            height: 600px;
+            background: url(img/race_car.jpeg);
+            position: relative;
+            background-repeat: no-repeat;
+            margin-top: 60px;
+            background-size: cover;   /* Takes up any extra white space at the width of the page */
+
+        }
+        #my-nav {
+            width: 1444px;
+            height: 20px;
+            /*margin: -90px auto 0;*/
+            margin-top: 20px;
+            position: absolute;
+        }
+
+        a, #page-title {
+            color: #5BEDF5;
+            font-size: large;
+            margin-top: -60px;
+        }
+
+
+        p {
+            color: #B7B3A2;
+        }
+
+        p#copy_r {
+            margin-left: 50%;
+            color: #B7B3A2;
+        }
+        /*#bckg-image {*/
+        /*width: 1480px;*/
+        /*height: 800px;*/
+        /*clear: both;*/
+        /*float: left;*/
+
+        /*}*/
+
+        #nav-list li {
+            display: inline-block;
+            float: right;
+            clear: left;
+        }
+        #page-title {
+            clear: both;
+            float: left;
+            margin-left: 20px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: x-large;
+            margin-top: -70px;
+        }
+
+        .h_refs {
+            margin: 15px;
+            margin-right: 60px;
+        }
+
+        /*hr {*/
+            /*!*overflow: auto;*!*/
+            /*clear: both;*/
+            /*color: #5BEDF5;*/
+            /*width: 130px;*/
+            /*float: left;*/
+            /*margin-left: 28px;*/
+            /*margin-top: 0px;*/
+            /*display: block;*/
+            /*height: 1px;*/
+            /*border: 0;*/
+            /*border-top: 2px solid #B7B3A2;*/
+
+        /*}*/
+        /*#r_hr {*/
+            /*!*overflow: auto;*!*/
+            /*clear: both;*/
+            /*width: 465px;*/
+            /*float: right;*/
+            /*margin-right: 50px;*/
+            /*margin-top: 0px;*/
+            /*display: block;*/
+            /*height: 1px;*/
+            /*border: 0;*/
+            /*border-top: 2px solid #B7B3A2;*/
+        /*}*/
+        a:hover {
+            color: purple;
+        }
+
+        footer {
+            background-color: #000;
+            opacity: 0.2;
+            height: 100px;
+            width: 100%;
+            /*margin-bottom: 15px;*/
+            background-size: cover;
+            float: right;
+        }
+        #f-section {
+            width: 100%;
+        }
+
+        div#bubble {
+            height: 15px;
+            width: 450px;
+            margin-left: 20px;
+            padding-top: 20px;
+            color: #5BEDF5;
+            font-weight: 200;
+            font-size: 18px;
+        }
+
+    </style>
 </head>
 <body>
+<header>
+    <nav id="my-nav">
+        <div>
+            <p id="page-title">Delenor Monroe</p>
+            <!--<hr>-->
+        </div>
+        <ul id="nav-list">
+            <li><a href="#" class="h_refs">About Me</a></li>
+            <li><a href="resume.html" class="h_refs">Resume</a></li>
+            <li><a href="portfolio.html" class="h_refs">Portfolio</a></li>
+            <li><a href="welcome.html" class="h_refs">Home</a></li>
+        </ul>
+        <!--<hr id="r_hr">-->
+    </nav>
+    <div id="bubble">
+        fast minds, fast cars, ... fine technology!
+    </div>
+
+</header>
+<main class="container">
+    <article class="col-lg-8 col-xs-12">
+        <div class="row">
+            <section class="col-md-4 col-sm-6 col-xs-12">
+
+            </section>
+        </div>
+    </article>
+
+    <h2><a href="MP3%20Player/mp3.html"> MP3 Player</a></h2>
+    <aside class="col-md-4 col-xs-12">
+        <div class="row">
+            <p>
+                • Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+                <br>
+                • Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget
+                <br>
+
+                • Lorem Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+            </p>
+        </div>
+    </aside>
+</main>
+<footer>
+    <div class="row">
+        <section id="f-section" class="col-md-4 col-xs-12">
+            <p id="copy_r">&copy; 2017</p>
+        </section>
+    </div>
+</footer>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/jquery.bubble.text.js"></script>
+<script src="js/script.js"></script>
+
 
 </body>
 </html>
