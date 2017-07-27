@@ -5,152 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Personal Site</title>
     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/basic/jquery.qtip.min.css">
     <link href="https://fonts.googleapis.com/css?family=Handlee|Nunito+Sans|Pavanam|Quicksand|Trirong" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bubbletext/style.css">
+    <link rel="stylesheet" href="css/personal-site.css">
     <style>
-        body {
-            height: 100%;
-            width: 100%;
-            background-color: #FFF;
+        ul{
+            list-style: none outside none;
+            padding-left: 0;
+            margin: 0;
         }
-
-        /*main, section, article {*/
-        /*border: 1px solid red;*/
-        /*}*/
-
-        header {
-            width: 1444px;
-            height: 600px;
-            background: url(img/race_car.jpeg);
-            position: relative;
-            background-repeat: no-repeat;
-            margin-top: 60px;
-            background-size: cover;   /* Takes up any extra white space at the width of the page */
-
+        .projects .item{
+            margin-bottom: 60px;
         }
-        #my-nav {
-            width: 1444px;
-            height: 20px;
-            /*margin: -90px auto 0;*/
-            margin-top: 20px;
-            position: absolute;
+        .content-slider li{
+            background-color: #ed3020;
+            text-align: center;
+            color: #FFF;
         }
-
-        a, #page-title {
-            color: #5BEDF5;
-            font-size: large;
-            margin-top: -60px;
+        .content-slider h3 {
+            margin: 0;
+            padding: 70px 0;
         }
-
-
-        p {
-            color: #B7B3A2;
+        .projects{
+            width: 800px;
         }
-
-        p#copy_r {
-            margin-left: 50%;
-            color: #B7B3A2;
-        }
-        /*#bckg-image {*/
-        /*width: 1480px;*/
-        /*height: 800px;*/
-        /*clear: both;*/
-        /*float: left;*/
-
-        /*}*/
-
-        #nav-list li {
-            display: inline-block;
-            float: right;
-            clear: left;
-        }
-        #page-title {
-            clear: both;
-            float: left;
-            margin-left: 20px;
-            font-family: 'Quicksand', sans-serif;
-            font-size: x-large;
-            margin-top: -70px;
-        }
-
-        .h_refs {
-            margin: 15px;
-            margin-right: 60px;
-        }
-
-        /*hr {*/
-            /*!*overflow: auto;*!*/
-            /*clear: both;*/
-            /*color: #5BEDF5;*/
-            /*width: 130px;*/
-            /*float: left;*/
-            /*margin-left: 28px;*/
-            /*margin-top: 0px;*/
-            /*display: block;*/
-            /*height: 1px;*/
-            /*border: 0;*/
-            /*border-top: 2px solid #B7B3A2;*/
-
-        /*}*/
-        /*#r_hr {*/
-            /*!*overflow: auto;*!*/
-            /*clear: both;*/
-            /*width: 465px;*/
-            /*float: right;*/
-            /*margin-right: 50px;*/
-            /*margin-top: 0px;*/
-            /*display: block;*/
-            /*height: 1px;*/
-            /*border: 0;*/
-            /*border-top: 2px solid #B7B3A2;*/
-        /*}*/
-        a:hover {
-            color: purple;
-        }
-
-        footer {
-            background-color: #000;
-            opacity: 0.2;
-            height: 100px;
-            width: 100%;
-            /*margin-bottom: 15px;*/
-            background-size: cover;
-            float: right;
-        }
-        #f-section {
-            width: 100%;
-        }
-
-        div#bubble {
-            height: 15px;
-            width: 450px;
-            margin-left: 20px;
-            padding-top: 20px;
-            color: #5BEDF5;
-            font-weight: 200;
-            font-size: 18px;
-        }
-
     </style>
 </head>
 <body>
 <header>
     <nav id="my-nav">
-        <div>
-            <p id="page-title">Delenor Monroe</p>
-            <!--<hr>-->
+
+        <div id="buttons">
+            <ul id="nav-list">
+                <li><a href="welcome.html" class="h_refs"><div>Home</div><div>Beginnings</div></a></li>
+                <li><a href="#" class="h_refs"><div>About</div><div>Enjoy</div></a></li>
+                <li><a href="resume.html" class="h_refs"><div>Resume</div><div>CV</div></a></li>
+                <li><a href="portfolio.html" class="h_refs"><div>Portfolio</div><div>Works</div></a></li>
+            </ul>
         </div>
-        <ul id="nav-list">
-            <li><a href="#" class="h_refs">About Me</a></li>
-            <li><a href="resume.html" class="h_refs">Resume</a></li>
-            <li><a href="portfolio.html" class="h_refs">Portfolio</a></li>
-            <li><a href="welcome.html" class="h_refs">Home</a></li>
-        </ul>
         <!--<hr id="r_hr">-->
     </nav>
-    <div id="bubble">
-        fast minds, fast cars, ... fine technology!
+    <div id="autoplay">
+        <p>Fast minds, fast code, ... fine technology!</p>
+        <p>Talk is cheap. Show me the code!</p>
+        <p>Good design adds value faster than cost.</p>
+        <p>It's easier to port a shell than a shell script.</p>
     </div>
 
 </header>
@@ -163,37 +64,105 @@
         </div>
     </article>
 
-    <h2><a href="MP3%20Player/mp3.html"> MP3 Player</a></h2>
-    <aside class="col-md-4 col-xs-12">
-        <div class="row">
-            <p>
-                • Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-                <br>
-                • Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget
-                <br>
 
-                • Lorem Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-            </p>
-        </div>
+    <aside class="col-md-4 col-xs-12">
+
     </aside>
 </main>
-<footer>
-    <div class="row">
-        <section id="f-section" class="col-md-4 col-xs-12">
-            <p id="copy_r">&copy; 2017</p>
-        </section>
+<footer id="f1">
+
+</footer>
+<div class="project">
+    <div class="item">
+        <div class="clearfix" style="max-width:474px;">
+            <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                <li data-thumb="img/weather_app_thumb.png">
+
+                </li>
+                <li data-thumb="img/whatsup_thumb.png">
+
+                </li>
+                <li data-thumb="img/simple_simon_thumb.png">
+
+                </li>
+                <li data-thumb="img/resume_thumb.png">
+
+                </li>
+                <li data-thumb="img/calculator_thumb.png">
+
+                </li>
+                <li data-thumb="img/keyboard_thumb.png">
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer id="f2">
+    <div>
+        <p id="page-title">Delenor Monroe</p>
+        <p id="specialty">I'm a web developer with a focus in the Java Web Stack:</p>
+        <p id="tech">Java, Javascript, HTML, CSS3, JQuery,</p>
+        <p id="tech2">Spring boot, and MySQL....</p>
+
     </div>
 </footer>
+<div class="row">
+    <section id="f-section" class="col-md-4 col-xs-12">
+        <p id="copy_r">&copy; 2017</p>
+    </section>
+</div>
+
 
 <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="js/jquery.bubble.text.js"></script>
-<script src="js/script.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/qtip2/3.0.3/basic/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bubbletext/jquery.bubble.text.js"></script>
+<script type="text/javascript" src="js/bubbletext/script.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/textition.js"></script>
+<script type="text/javascript" src="js/lightslider.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#content-slider").lightSlider({
+            loop: true,
+            keyPress: true
+        });
+
+        $('#image-gallery').lightSlider({
+            gallery: true,
+            item: 1,
+            thumbItem: 6,
+            slideMargin: 0,
+            speed: 500,
+            auto: true,
+            loop: true,
+            onSliderLoad: function () {
+                $('#image-gallery').removeClass('cS-hidden');
+            }
+        });
+
+        $('#autoplay').textition({
+            speed: 1,
+            animation: 'ease-out',
+            map: {x: 200, y: 100, z: 0},
+            autoplay: true,
+            interval: 1.9
+        });
+
+        $('#buttons a').each(function () {
+            $(this).textition({
+                speed: 0.7,
+                handler: 'mouseenter mouseleave'
+            })
+        });
+
+    });
+</script>
 
 
 </body>

@@ -1,0 +1,173 @@
+
+html {
+    background: url("../img/AdobeStock_52706281.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+body {
+    position: relative;
+    height: 0;
+    width: 0;
+    padding: 0;
+}
+
+#my-nav {
+    width: 200px;
+    height: 20px;
+    margin-top: 70px;
+    position: absolute;
+}
+
+a, #page-title {
+    color: #aa8df5;
+    font-size: medium;
+}
+
+
+p {
+    color: #B7B3A2;
+}
+
+p#copy_r {
+    font-size: small;
+    margin-top: 745px;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.row > #f-section {
+    height: 15px;
+    width: 100px;
+    margin-left: 675px;
+    padding: 0;
+}
+
+
+#page-title {
+    position: absolute;
+    clear: both;
+    float: left;
+    margin-left: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    margin-top: 2px;
+}
+
+#specialty {
+    position: absolute;
+    clear: both;
+    float: left;
+    margin-left: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    margin-top: 30px;
+}
+
+#tech {
+    position: absolute;
+    clear: both;
+    float: left;
+    margin-left: 70px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    margin-top: 52px;
+}
+
+#tech2 {
+    position: absolute;
+    clear: both;
+    float: left;
+    margin-left: 21px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    margin-top: 74px;
+}
+
+.h_refs {
+    padding-right: 70px;
+}
+
+
+div#buttons > #nav-list {
+    font-size: medium;
+    position: absolute;
+    height: 15px;
+    width: 365px;
+    margin-left: 1045px;
+
+}
+
+#nav-list > li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+a:hover {
+    color: purple;
+}
+
+#f1 {
+    position: absolute;
+    background-color: #000;
+    opacity: 0.4;
+    height: 160px;
+    width: 1017px;
+    margin-top: 615px;
+    padding: 0;
+    margin-left: 420px;
+}
+
+.project {
+    position: absolute;
+    height: 160px;
+    margin-top: 615px;
+    margin-left: 420px;
+    padding: 0;
+}
+
+
+#f2 {
+    position: absolute;
+    background-color: #000;
+    opacity: 0.9;
+    height: 160px;
+    width: 400px;
+    margin-top: 615px;
+    /*float: left;*/
+    padding: 0;
+    left: 3px;
+}
+/*#f-section {
+    width: 100%;
+
+}*/
+
+
+div#autoplay > p {
+    height: 15px;
+    width: 475px;
+    margin-left: 20px;
+    padding-top: 20px;
+    color: #c4f2f5;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+ul{
+    list-style: none outside none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.project .item{
+    margin-bottom: 60px;
+}
+
+.project {
+    width: 800px;
+}
