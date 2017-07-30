@@ -8,106 +8,89 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/basic/jquery.qtip.min.css">
     <link href="https://fonts.googleapis.com/css?family=Handlee|Nunito+Sans|Pavanam|Quicksand|Trirong" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/bubbletext/style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
     <link rel="stylesheet" href="css/personal-site.css">
-    <style>
-        ul{
-            list-style: none outside none;
-            padding-left: 0;
-            margin: 0;
-        }
-        .projects .item{
-            margin-bottom: 60px;
-        }
-        .content-slider li{
-            background-color: #ed3020;
-            text-align: center;
-            color: #FFF;
-        }
-        .content-slider h3 {
-            margin: 0;
-            padding: 70px 0;
-        }
-        .projects{
-            width: 800px;
-        }
-    </style>
+
 </head>
 <body>
 <header>
-    <nav id="my-nav">
 
-        <div id="buttons">
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-inverse p-4">
+                <h4 class="text-white">Collapsed content</h4>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse bg-inverse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
+        <!--<div id="buttons">
             <ul id="nav-list">
                 <li><a href="welcome.html" class="h_refs"><div>Home</div><div>Beginnings</div></a></li>
                 <li><a href="#" class="h_refs"><div>About</div><div>Enjoy</div></a></li>
                 <li><a href="resume.html" class="h_refs"><div>Resume</div><div>CV</div></a></li>
                 <li><a href="portfolio.html" class="h_refs"><div>Portfolio</div><div>Works</div></a></li>
             </ul>
-        </div>
+        </div>-->
         <!--<hr id="r_hr">-->
-    </nav>
-    <div id="autoplay">
+   <!-- <div id="autoplay">
         <p>Fast minds, fast code, ... fine technology!</p>
         <p>Talk is cheap. Show me the code!</p>
         <p>Good design adds value faster than cost.</p>
         <p>It's easier to port a shell than a shell script.</p>
-    </div>
+    </div>-->
 
 </header>
-<main class="container">
-    <article class="col-lg-8 col-xs-12">
-        <div class="row">
-            <section class="col-md-4 col-sm-6 col-xs-12">
 
-            </section>
-        </div>
-    </article>
+<div class="container">
 
-
-    <aside class="col-md-4 col-xs-12">
-
-    </aside>
-</main>
-<footer id="f1">
-
-</footer>
 <div class="project">
     <div class="item">
-        <div class="clearfix" style="max-width:474px;">
-            <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                <li data-thumb="img/weather_app_thumb.png">
 
+            <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+
+                <li data-thumb="img/weather_app_thumb.png">
+                    <!--<img src="img/weather_app.png">-->
                 </li>
                 <li data-thumb="img/whatsup_thumb.png">
-
+                    <!--<img src="img/whatsup.png">-->
                 </li>
                 <li data-thumb="img/simple_simon_thumb.png">
-
+                    <!--<img src="img/simple_simon.png" >-->
                 </li>
                 <li data-thumb="img/resume_thumb.png">
-
+                    <!--<img src="img/resume.png">-->
                 </li>
                 <li data-thumb="img/calculator_thumb.png">
-
+                    <!--<img src="img/calculator.png">-->
                 </li>
                 <li data-thumb="img/keyboard_thumb.png">
-
+                    <!--<img src="img/keyboard.png">-->
                 </li>
             </ul>
+
         </div>
     </div>
 </div>
+<footer id="f1">
+
+</footer>
+
 <footer id="f2">
     <div>
         <p id="page-title">Delenor Monroe</p>
-        <p id="specialty">I'm a web developer with a focus in the Java Web Stack:</p>
+        <p id="specialty">I'm a full-stack web developer that focuses on Java:</p>
         <p id="tech">Java, Javascript, HTML, CSS3, JQuery,</p>
         <p id="tech2">Spring boot, and MySQL....</p>
 
     </div>
 </footer>
-<div class="row">
+<div id="cr" class="row">
     <section id="f-section" class="col-md-4 col-xs-12">
         <p id="copy_r">&copy; 2017</p>
     </section>
@@ -121,24 +104,21 @@
 
 <script type="text/javascript" src="http://cdn.jsdelivr.net/qtip2/3.0.3/basic/jquery.qtip.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/bubbletext/jquery.bubble.text.js"></script>
-<script type="text/javascript" src="js/bubbletext/script.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
+
 <script type="text/javascript" src="js/textition.js"></script>
 <script type="text/javascript" src="js/lightslider.js"></script>
 <script>
     $(document).ready(function() {
-        $("#content-slider").lightSlider({
-            loop: true,
-            keyPress: true
-        });
 
         $('#image-gallery').lightSlider({
             gallery: true,
             item: 1,
-            thumbItem: 6,
-            slideMargin: 0,
-            speed: 500,
+            thumbItem: 3,
+            slideMove: 1,
+            pauseOnHover: true,
+            mode: "slide",
+            slideEndAnimation: true,
+            speed: 300,
             auto: true,
             loop: true,
             onSliderLoad: function () {
@@ -146,20 +126,14 @@
             }
         });
 
-        $('#autoplay').textition({
+       /* $('#autoplay').textition({
             speed: 1,
             animation: 'ease-out',
             map: {x: 200, y: 100, z: 0},
             autoplay: true,
             interval: 1.9
-        });
+        });*/
 
-        $('#buttons a').each(function () {
-            $(this).textition({
-                speed: 0.7,
-                handler: 'mouseenter mouseleave'
-            })
-        });
 
     });
 </script>

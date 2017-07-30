@@ -36,7 +36,7 @@ p#copy_r {
     font-size: small;
     margin-top: 745px;
     color: #ffffff;
-    margin-bottom: 0px;
+
 }
 
 .row > #f-section {
@@ -120,14 +120,17 @@ a:hover {
     margin-top: 615px;
     padding: 0;
     margin-left: 420px;
+    z-index: 2;
 }
 
 .project {
     position: absolute;
     height: 160px;
-    margin-top: 615px;
+    width: 1017px;
+    margin-top: 634px;
     margin-left: 420px;
     padding: 0;
+    z-index:3;
 }
 
 
@@ -142,10 +145,6 @@ a:hover {
     padding: 0;
     left: 3px;
 }
-/*#f-section {
-    width: 100%;
-
-}*/
 
 
 div#autoplay > p {
@@ -162,12 +161,21 @@ ul{
     list-style: none outside none;
     padding-left: 0;
     margin: 0;
+    opacity: .8;
 }
 
-.project .item{
-    margin-bottom: 60px;
+
+
+.project > li {
+    z-index: 3;
 }
 
-.project {
-    width: 800px;
+#cr {
+    position: absolute;
+    z-index: 4;
+    margin-top: 11px;
+}
+
+nav > li {
+    float: right;
 }

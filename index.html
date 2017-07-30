@@ -1,10 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Del's Site</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        body {
+            font: 24px Helvetica;
+            background: #999999;
+        }
+
+        #main {
+            min-height: 800px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-flow: row;
+        }
+
+        #main > article {
+            margin: 4px;
+            padding: 5px;
+            border: 1px solid #cccc33;
+            border-radius: 7pt;
+            background: #dddd88;
+            flex: 3 1 60%;
+            order: 2;
+        }
+
+        #main > nav {
+            margin: 4px;
+            padding: 5px;
+            border: 1px solid #8888bb;
+            border-radius: 7pt;
+            background: #ccccff;
+            flex: 1 6 20%;
+            order: 1;
+        }
+
+        #main > aside {
+            margin: 4px;
+            padding: 5px;
+            border: 1px solid #8888bb;
+            border-radius: 7pt;
+            background: #ccccff;
+            flex: 1 6 20%;
+            order: 3;
+        }
+
+        header, footer {
+            display: block;
+            margin: 4px;
+            padding: 5px;
+            min-height: 100px;
+            border: 1px solid #eebb55;
+            border-radius: 7pt;
+            background: #ffeebb;
+        }
+
+        /* Too narrow to support three columns */
+        @media all and (max-width: 640px) {
+            #main, #page {
+                flex-direction: column;
+            }
+
+            #main > article, #main > nav, #main > aside {
+                /* Return them to document order */
+                order: 0;
+            }
+
+            #main > nav, #main > aside, header, footer {
+                min-height: 50px;
+                max-height: 50px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello</h1>
+<header>Delenor Monroe
+    <p class="lead" id="specialty">I'm a full-stack web developer that focuses on Java:</p>
+    <p class="lead" id="tech">Java, Javascript, HTML, CSS3, JQuery,</p>
+    <p class="lead" id="tech2">Spring boot, and MySQL....</p>
+</header>
+<div id='main'>
+    <article>article</article>
+    <nav>nav</nav>
+    <aside>aside</aside>
+</div>
+<footer><p id="copy_r">&copy; 2017</p></footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
